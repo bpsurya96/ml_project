@@ -1,3 +1,1 @@
-# ml_project
-
-END to END Project
+# Machine Learning Project
