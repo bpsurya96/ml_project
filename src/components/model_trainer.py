@@ -86,9 +86,10 @@ class ModelTrainer:
 
             model_report:dict=evaluate_models(X_train=X_train,y_train=y_train,X_test=X_test,y_test=y_test,
                                              models=models,param=params)
-            
+            print(model_report)
             ## To get best model score from dict
             best_model_score = max(sorted(model_report.values()))
+            print(best_model_score)
 
             ## To get best model name from dict
 

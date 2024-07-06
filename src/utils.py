@@ -29,6 +29,9 @@ def evaluate_models(X_train, y_train,X_test,y_test,models,param):
             model = list(models.values())[i]
             para=param[list(models.keys())[i]]
 
+            print(model)
+            print(para)
+
             gs = GridSearchCV(model,para,cv=3)
             gs.fit(X_train,y_train)
 
